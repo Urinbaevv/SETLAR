@@ -1,0 +1,666 @@
+#1-Masala
+fruits = {'apple', 'banana'}
+
+fruits.add('cherry')
+print("1-vazifa natijasi:", fruits)
+
+fruits.remove('banana')
+print("2-vazifa natijasi:", fruits)
+
+fruits.add('kiwi')
+print("3-vazifa natijasi:", fruits)
+
+if 'apple' in fruits:
+    print("4-vazifa natijasi: yes")
+else:
+    print("4-vazifa natijasi: no")
+
+tropicals = {'pineapple', 'banana'}
+fruits.update(tropicals)
+print("5-vazifa natijasi:", fruits)
+
+fruits.discard('banana')
+print("6-vazifa natijasi:", fruits)
+
+result7 = fruits.difference(tropicals)
+print("7-vazifa natijasi:", result7)
+
+unique_fruits = fruits.copy()
+print("8-vazifa natijasi:", unique_fruits)
+
+result9 = sorted(fruits)
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi:", fruits)
+
+#2-Masala
+colors = {"red", "green", "blue"}
+
+result1 = colors.add("yellow")
+print("1-vazifa natijasi:", colors)
+
+result2 = colors.discard("green")
+print("2-vazifa natijasi:", colors)
+
+result3 = "blue" in colors
+print("3-vazifa natijasi:", "Found" if result3 else "Not Found")
+
+extra_colors = {"black", "white", "red"}
+print("4-vazifa natijasi:", extra_colors)
+
+result5 = colors.union(extra_colors)
+print("5-vazifa natijasi:", result5)
+
+result6 = colors.difference_update(extra_colors)
+print("6-vazifa natijasi:", colors)
+
+result7 = colors.intersection(extra_colors)
+print("7-vazifa natijasi:", result7)
+
+result8 = len(colors)
+print("8-vazifa natijasi:", result8)
+
+new_set = colors.copy()
+new_set.clear()
+print("9-vazifa natijasi:", new_set)
+
+print("10-vazifa natijasi:", colors)
+
+#3-Masala
+
+students = {'Ali', 'Vali', 'Sami'}
+
+students.add("Aziz")
+print("1-vazifa natijasi:", students)
+
+students.remove("Sami")
+print("2-vazifa natijasi:", students)
+
+if "jamshid" in students:
+    print("3-vazifa natijasi: Bor")
+else:
+    print("3-vazifa natijasi: Yo'q")
+
+students.add("Jamshid")
+print("4-vazifa natijasi:", students)
+
+new_students = {'Vali', 'Diyor'}
+students.update(new_students)
+print("5-vazifa natijasi:", students)
+
+result6 = students.intersection(new_students)
+print("6-vazifa natijasi:", result6)
+
+result7 = students.difference(new_students)
+print("7-vazifa natilasi:", result7)
+
+graduates = {'Ali', 'Jamshid'}
+print("8-vazifa natijasi:", graduates)
+
+result9 = graduates.symmetric_difference(students)
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi:" , students)
+
+#4-Masala
+numbers = {1, 2, 3, 4}
+
+numbers.add(5)
+print("1-vazifa natijasi:", numbers)
+
+numbers.discard(2)
+print("2-vazifa natizasi:", numbers)
+
+if 10 in numbers:
+    print("3-vazifa natijasi: Bor")
+else:
+    print("3-vazifa natijasi: Yo'q")
+
+more_nums = {3, 6, 7}
+print("4-vaifa natijasi;", more_nums)
+
+numbers.update(more_nums)
+print("5-vazifa natijasi:", numbers)
+
+result6 = numbers.intersection(more_nums)
+print("6-vazifa bajarildi:", result6)
+
+result7 = numbers.difference(more_nums)
+print("7-vazifa natijasi;", result7)
+
+result8 = numbers.union(more_nums)
+print("8-vazifa natijasi:", result8)
+
+max(numbers)
+min(numbers)
+print("9-vazifa natijasi:")
+
+print("10-vazifa natijasi:", numbers)
+
+#5-Masala
+animals = {'cat', 'dog', 'fish'}
+
+animals.add("rabbit")
+print("1-vazifa natijasi:", animals)
+
+animals.remove("dog")
+print("2-vazifa natijasi:" , animals)
+
+if "parrot" in animals:
+    print("3-vazifa natijasi: Bor")
+else:
+    print("3-vazifa natijasi: Yo'q")
+
+animals.add("parrot")
+print("4-vazifa natijasi:", animals)
+
+more_animals = {"lion", "cat"}
+print("5-vazifa natijasi:", more_animals)
+
+animals.update(more_animals)
+print("6-vazifa natijasi:", animals)
+
+result7 = animals.difference(more_animals)
+print("7-vazifa natijasi:", result7)
+
+result8 = sorted(animals)
+print("8-vazifa natijasi:", result8)
+
+result9 = len(animals)
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi:", animals)
+
+#6-Masala
+cart = {'milk', 'bread', 'cheese'}
+
+cart.add("butter")
+print("1-vazifa natijasi:", cart)
+
+cart.remove("milk")
+print("2-vazifa natijasi:", cart)
+
+if "jam" in cart:
+    print("3-vazifa natijasi: Bor")
+else:
+    print("3-vazifa natijasi: yo'q")
+
+cart.add("jam")
+print("4-vazifa natijasi: ", cart)
+
+new_items = {"bread", "yogurt"}
+print("5-vazifa natijasi:", new_items)
+
+cart.update(new_items)
+print("6-vazifa natijasi: ", new_items)
+
+result7 = cart.difference(new_items)
+print("7-vazifa natijasi:", result7)
+
+result8 = cart.intersection(new_items)
+print("8-vazifa natijasi:", result8)
+
+if cart:
+    print("9-vazifa natijasi: Bo'sh emas")
+else:
+    print("9-vazifa natijasi: Bo'sh ")
+
+print("10-vazifa natijasi: ", cart)
+
+#7-Masala
+subjects = {'Math', 'Physics'}
+
+subjects.add("Biology")
+print("1-vazifa natijasi:", subjects)
+
+subjects.discard("Math")
+print("2-vazifa natijasi:", subjects)
+
+if "Chemistry" in subjects:
+    print("3-vazifa natijasi: Bor")
+else:
+    print("3-vazifa natijasi: Yo'q")
+
+subjects.add("Chemistry")
+print("4-vazifa natijasi:", subjects)
+
+extra = {'History', 'Physics'}
+print("5-vazifa natijasi:", extra)
+
+result6 = subjects.union(extra)
+print("6-vazifa natijasi:", result6)
+
+copy_subjects = subjects.copy()
+print("7-vazifa natijasi (nusxa):", copy_subjects)
+
+copy_subjects.discard("Geography")
+print("8-vazifa natijasi:", copy_subjects)
+
+result9 = subjects.symmetric_difference(extra)
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi:", subjects)
+
+#8-Masala
+cities = {'Tashkent', 'Samarkand'}
+
+cities.add("Bukhara")
+print("1-vazifa natija: ", cities)
+
+cities.remove('Samarkand')
+print("2-vazifa natijasi:", cities)
+
+if "khiva" in cities:
+    print("3-vazifa natijasi: Bor")
+else:
+    print("3-vazifa natijasi: Yo'q")
+
+cities.add('Khiva')
+print("4-vazifa natijasi:", cities)
+
+uzbek_cities = {'Andijan', 'Namangan', 'Tashkent'}
+cities.update(uzbek_cities)
+print("5-vazifa natijasi:", cities)
+
+result6 = cities.difference(uzbek_cities)
+print("6-vazifa natijasi:", result6)
+
+result7 = cities.intersection(uzbek_cities)
+print("7-vazifa natijasi:", result7)
+
+result8 = sorted(cities)
+print("8-vazifa natijasi:", result8)
+
+print("10-vazifa natijasi:", cities)
+
+#9-Masala
+brands = {'Nike', 'Adidas'}
+
+brands.add("Puma")
+print("1-vazifa natijasi:", brands)
+
+brands.discard("Adidas")
+print("2-vazifa natijasi:", brands)
+
+if "Reebok" in brands:
+    print("3-vazifa nazarilidi: Bor")
+else:
+    print("3-vazifa natizassi: Yo'q")
+
+brands.add('Reebok')
+print("4-vazifa natijasi:", brands)
+
+local_brands = {"Sabir", "Nike"}
+print("5-vazifa natijasi:", local_brands)
+
+result6 = brands.union(local_brands)
+print("6-vazifa natijasi:", result6)
+
+result7 = brands.difference(local_brands)
+print("7-vazifa natijasi:" , result7)
+
+copy_brands = brands.copy()
+print("8-vazifa natijasi (nusxa):", copy_brands)
+
+copy_brands.clear()
+print("9-vazifani natijasi:", copy_brands)
+
+print(f"10-vazifa natijasi:", [brands], "copy_brands:", [copy_brands])
+
+#10-Masala
+books = {'1984', 'Hamlet', 'Inferno'}
+
+books.add('Animal Farm')
+print("1-vazifa natijasi:", books)
+
+books.remove('Inferno')
+print("2-vazifa natijasi:", books)
+
+if 'Hamlet' in books:
+    print("3-vazifa natijasi: Bor")
+else:
+    print("3-vazifa natijasi: Yo'q")
+
+books.add('Fahrenheit 451')
+print("4-vazifa natijasi:", books)
+
+new_books = {'1984', 'Dune'}
+print("5-vazifa natijasi:", new_books)
+
+books.update(new_books)
+print("6-vazifa natijasi:", books)
+
+result7 = books.difference(new_books)
+print("7-vazifa natijasi:", result7)
+
+result8 = books.intersection(new_books)
+print("8-vazifa natijasi:", result8)
+
+result9 = sorted(books)
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi:", books)
+
+#11-Masala
+invited = {'Ali', 'Vali', 'Salim'}
+arrived = {'Vali', 'Sami'}
+
+invited.add('Aziza')
+print("1-vazifa natijasi:", invited)
+
+result2 = invited.intersection(arrived)
+print("2-vazifa natijasi:", result2)
+
+result3 = invited.difference(arrived)
+print("3-vazifa natijasi:", result3)
+
+result4 = invited.union(arrived)
+print("4-vazifa natijasi:", result4)
+
+invited.clear()
+print("5-vazifa natijasi:", invited)
+
+arrived.discard('Sami')
+print("6-vazifa natijasi:", arrived)
+
+arrived.add('Sardor')
+print("7-vazifa natijasi:", arrived)
+
+result8 = arrived.difference({'Vali'})
+print("8-vazifa natijasi:", result8)
+
+result9 = len(arrived)
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi - invited:", invited, "| arrived:", arrived)
+
+#12-Masala
+udemy = {'Alisher', 'Dilshod', 'Malika'}
+coursera = {'Malika', 'Zafar'}
+
+udemy.add('Shahnoza')
+print("1-vazifa natijasi:", udemy)
+
+result2 = udemy.intersection(coursera)
+print("2-vazifa natijasi:", result2)
+
+result3 = coursera.difference(udemy)
+print("3-vazifa natijasi:", result3)
+
+result4 = udemy.union(coursera)
+print("4-vazifa natijasi:", result4)
+
+copy_udemy = udemy.copy()
+print("5-vazifa natijasi (nusxa):", copy_udemy)
+
+copy_udemy.discard('Dilshod')
+print("6-vazifa natijasi:", copy_udemy)
+
+result8 = sorted(udemy.union(coursera))
+print("8-vazifa natijasi:", result8)
+
+print("9-vazifa natijasi - udemy:", len(udemy), "| coursera:", len(coursera))
+
+print("10-vazifa natijasi - udemy:", udemy, "| coursera:", coursera)
+
+#13-Masala
+it_vacancy = {'Azamat', 'Javlon', 'Sarvar'}
+design_vacancy = {'Javlon', 'Sabrina'}
+
+it_vacancy.add('Kamila')
+print("1-vazifa natijasi:", it_vacancy)
+
+result2 = sorted(it_vacancy)
+print("2-vazifa natijasi:", result2)
+
+result3 = it_vacancy.intersection(design_vacancy)
+print("3-vazifa natijasi:", result3)
+
+result4 = design_vacancy.difference(it_vacancy)
+print("4-vazifa natijasi:", result4)
+
+result5 = it_vacancy.union(design_vacancy)
+print("5-vazifa natijasi:", result5)
+
+copy_it = it_vacancy.copy()
+print("6-vazifa natijasi (nusxa):", copy_it)
+
+copy_it.discard('Sarvar')
+print("7-vazifa natijasi:", copy_it)
+
+result8 = it_vacancy.symmetric_difference(design_vacancy)
+print("8-vazifa natijasi:", result8)
+
+print("9-vazifa natijasi - it_vacancy:", len(it_vacancy), "| design_vacancy:", len(design_vacancy))
+
+result10 = sorted(it_vacancy.union(design_vacancy))
+print("10-vazifa natijasi:", result10)
+
+#14-Masala
+students = {'Ali', 'Soliha', 'Bobur'}
+checked = {'Bobur', 'Ali'}
+
+checked.add('Gulbahor')
+print("1-vazifa natijasi:", checked)
+
+result2 = students.difference(checked)
+print("2-vazifa bajarildi:", result2)
+
+result3 = sorted(checked)
+print("3-vazifa natijasi:", result3)
+
+result4 = students.union(checked)
+print("4-vazifa natijasi:", result4)
+
+result5 = len(checked)
+print("5-vazifa natijasi:", result5)
+
+copy_checked = checked.copy()
+copy_checked.discard('Ali')
+print("6-vazifa natijasi:", copy_checked)
+
+result7 = students.symmetric_difference(checked)
+print("7-vazifa natijasi:", result7)
+
+print("8-vazifa natijasi - students:", bool(students), "| checked:", bool(checked))
+
+result9 = students.intersection(checked)
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi - students:", students, "| checked:", checked)
+
+#15-Masala
+toshkent_trip = {'Olim', 'Rustam', 'Ziyoda'}
+samarkand_trip = {'Ziyoda', 'Kamola'}
+
+toshkent_trip.add('Nodira')
+print("1-vazifa natijasi:", toshkent_trip)
+
+result2 = toshkent_trip.intersection(samarkand_trip)
+print("2-vazifa natijasi:", result2)
+
+result3 = toshkent_trip.difference(samarkand_trip)
+print("3-vazifa natijasi:", result3)
+
+result4 = toshkent_trip.union(samarkand_trip)
+print("4-vazifa natijasi:", result4)
+
+result5 = toshkent_trip.symmetric_difference(samarkand_trip)
+print("5-vazifa natijasi:", result5)
+
+toshkent_trip.discard('Ziyoda')
+print("6-vazifa natijasi:", toshkent_trip)
+
+copy_trip = toshkent_trip.copy()
+copy_trip.clear()
+print("7-vazifa natijasi (tozalangan):", copy_trip)
+
+print("8-vazifa natijasi - toshkent:", len(toshkent_trip), "| samarkand:", len(samarkand_trip))
+
+result9 = sorted(toshkent_trip.union(samarkand_trip))
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi - toshkent:", toshkent_trip, "| samarkand:", samarkand_trip)
+
+#16-Masala
+online_orders = {'Ulugbek', 'Shoira', 'Ibrohim'}
+cash_orders = {'Ibrohim', 'Dilshod'}
+
+online_orders.add('Muzaffar')
+print("1-vazifa natijasi:", online_orders)
+
+result2 = cash_orders.difference(online_orders)
+print("2-vazifa natijasi:", result2)
+
+result3 = online_orders.intersection(cash_orders)
+print("3-vazifa natijasi:", result3)
+
+result4 = online_orders.symmetric_difference(cash_orders)
+print("4-vazifa natijasi:", result4)
+
+result5 = sorted(online_orders.union(cash_orders))
+print("5-vazifa natijasi:", result5)
+
+copy_online = online_orders.copy()
+print("6-vazifa natijasi (nusxa):", copy_online)
+
+copy_online.clear()
+print("7-vazifa natijasi (tozalangan):", copy_online)
+
+print("8-vazifa natijasi - online:", len(online_orders), "| cash:", len(cash_orders))
+
+cash_orders.discard('Dilshod')
+print("9-vazifa natijasi:", cash_orders)
+
+print("10-vazifa natijasi - online:", online_orders, "| cash:", cash_orders)
+
+#17-Masala
+football = {'Otabek', 'Ali'}
+basketball = {'Ali', 'Javohir'}
+
+football.add('Farrux')
+print("1-vazifa natijasi:", football)
+
+result2 = football.intersection(basketball)
+print("2-vazifa natijasi:", result2)
+
+result3 = football.difference(basketball)
+print("3-vazifa natijasi:", result3)
+
+result4 = sorted(basketball.difference(football))
+print("4-vazifa natijasi:", result4)
+
+result5 = football.union(basketball)
+print("5-vazifa natijasi:", result5)
+
+result6 = football.symmetric_difference(basketball)
+print("6-vazifa natijasi:", result6)
+
+basketball.discard('Ali')
+print("7-vazifa natijasi:", basketball)
+
+copy_basket = basketball.copy()
+print("8-vazifa natijasi (nusxa):", copy_basket)
+
+copy_basket.clear()
+print("9-vazifa natijasi (tozalangan):", copy_basket)
+
+print("10-vazifa natijasi - football:", football, "| basketball:", basketball)
+
+#18-Masala
+registered = {'a@gmail.com', 'b@gmail.com', 'c@gmail.com'}
+verified = {'b@gmail.com', 'c@gmail.com', 'd@gmail.com'}
+
+registered.add('e@gmail.com')
+print("1-vazifa natijasi:", registered)
+
+result2 = registered.difference(verified)
+print("2-vazifa natijasi:", result2)
+
+result3 = registered.intersection(verified)
+print("3-vazifa natijasi:", result3)
+
+result4 = registered.union(verified)
+print("4-vazifa natijasi:", result4)
+
+result5 = registered.difference(verified)
+print("5-vazifa natijasi:", result5)
+
+result6 = registered.symmetric_difference(verified)
+print("6-vazifa natijasi:", result6)
+
+result7 = sorted(registered.union(verified))
+print("7-vazifa natijasi:", result7)
+
+print("8-vazifa natijasi - registered:", len(registered), "| verified:", len(verified))
+
+verified.discard('c@gmail.com')
+print("9-vazifa natijasi:", verified)
+
+print("10-vazifa natijasi - registered:", registered, "| verified:", verified)
+
+#19-Masala
+present = {'Asilbek', 'Nodir', 'Gulnoza'}
+late = {'Gulnoza', 'Madina'}
+
+present.add('Madina')
+print("1-vazifa natijasi:", present)
+
+result2 = late.difference(present)
+print("2-vazifa natijasi:", result2)
+
+result3 = present.difference(late)
+print("3-vazifa natijasi:", result3)
+
+result4 = present.union(late)
+print("4-vazifa natijasi:", result4)
+
+result5 = present.symmetric_difference(late)
+print("5-vazifa natijasi:", result5)
+
+present.discard('Asilbek')
+print("6-vazifa natijasi:", present)
+
+copy_present = present.copy()
+print("7-vazifa natijasi (nusxa):", copy_present)
+
+copy_present.clear()
+print("8-vazifa natijasi (tozalangan):", copy_present)
+
+result9 = sorted(present.union(late))
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi - present:", present, "| late:", late)
+
+#20-Masala
+taken = {'Lola', 'Shoxrux', 'Muhammad'}
+returned = {'Muhammad', 'Lola'}
+
+taken.add('Suhrob')
+print("1-vazifa natijasi:", taken)
+
+result2 = taken.difference(returned)
+print("2-vazifa natijasi:", result2)
+
+result3 = len(returned)
+print("3-vazifa natijasi:", result3)
+
+result4 = taken.union(returned)
+print("4-vazifa natijasi:", result4)
+
+result5 = taken.difference(returned)
+print("5-vazifa natijasi:", result5)
+
+result6 = taken.symmetric_difference(returned)
+print("6-vazifa natijasi:", result6)
+
+taken.discard('Shoxrux')
+print("7-vazifa natijasi:", taken)
+
+copy_taken = taken.copy()
+print("8-vazifa natijasi (nusxa):", copy_taken)
+
+result9 = sorted(taken.union(returned))
+print("9-vazifa natijasi:", result9)
+
+print("10-vazifa natijasi - taken:", taken, "| returned:", returned)
